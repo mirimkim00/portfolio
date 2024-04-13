@@ -37,8 +37,13 @@
   font-weight: 500;
 }
 
-.ttl {
+.allerta {
   font-family: 'Allerta';
+
+}
+
+.asap {
+  font-family: 'Asap';
 
 }
 
@@ -66,18 +71,30 @@
   visibility: visible;
 }
 
+.ttl {
+  padding: 20px 0;
+}
+
 .experiences {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .ex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+}
+
+.jobContent {
+  padding-top: 40px;
+}
+
+.jdContent {
+  margin-top: 20px;
 }
 
 .dot {
