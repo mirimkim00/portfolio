@@ -7,6 +7,103 @@
   pointer-events: none;
 }
 
+.nav-brand {
+  font-weight: 500;
+  font-size: 24px;
+  padding-left: 1rem !important;
+}
+
+.App,
+.navbar {
+  background-color: #fefef0;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+  font-family: 'Allerta';
+  font-weight: 500;
+}
+
+.ttl {
+  font-family: 'Allerta';
+
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #000;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #009970;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 100%;
+  visibility: visible;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0;
+}
+
+.job {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.jd {
+  text-align: left;
+  width: 600px;
+}
+
+.vl {
+  border-right: 2px dashed rgb(111, 111, 111);
+  height: 200px;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -32,6 +129,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
