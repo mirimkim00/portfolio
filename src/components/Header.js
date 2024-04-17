@@ -1,16 +1,11 @@
-import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
 
 export default function Header() {
     return (
-        <>
-
+        <header>
             <Navbar key='md' expand='md' className="navbar-expand-lg mb-3">
                 <Container fluid>
                     <Navbar.Brand className='me-auto' href="#" style={{ fontFamily: 'Asap', fontSize: '35px', fontWeight: 600 }} >MIRIM</Navbar.Brand>
@@ -38,6 +33,6 @@ export default function Header() {
                 </Container>
             </Navbar>
 
-        </>
+        </header>
     );
 }

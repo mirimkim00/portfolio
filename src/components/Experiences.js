@@ -1,6 +1,6 @@
 export default function Expereinces() {
     return (
-        <>
+        <section>
             <h3 className="ttl allerta">Experiences</h3>
             <div className="experiences">
                 <div className="job ex asap">
@@ -12,7 +12,7 @@ export default function Expereinces() {
                             Alpha Labs, North York, Canada
                         </p>
                     </div>
-                    <div style={{marginTop: '110px'}}>
+                    <div style={{ marginTop: '110px' }}>
                         <h5>Mobile Application Developer</h5>
                         <p>
                             Volunteer<br />
@@ -72,6 +72,6 @@ export default function Expereinces() {
                     </div>
                 </div>
             </div >
-        </>
+        </section>
     )
 }
