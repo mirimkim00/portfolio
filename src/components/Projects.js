@@ -1,8 +1,10 @@
 import { FaGithub } from "react-icons/fa";
+import { GrDeploy } from "react-icons/gr";
+import { IconContext } from "react-icons";
 
 export default function Projects() {
     return (
-        <section className='darkSection'>
+        <section id="projects" className='darkSection'>
             <h3 className="ttl allerta">Projects</h3>
 
             <div className='pjs'>
@@ -14,12 +16,25 @@ export default function Projects() {
                             <h6>Museum of Art Website</h6>
                         </div>
                         <div class="flip-card-back">
-                            {/* explanation? Link */}
-                            {/* <h1>John Doe</h1> */}
-                            <FaGithub />
+                            <div className="asap pjIcons">
+                                <IconContext.Provider value={{ className: "pjIcon" }}>
+                                    <div onClick={() => window.open("https://github.com/mirimkim00/Museum-of-Art-website", '_blank')}>
+                                        <FaGithub />
+                                        Go to GitHub
+                                    </div>
+                                    <div>
+                                        <GrDeploy />
+                                        See the Demo
+                                    </div>
+                                </IconContext.Provider>
+                            </div>
+                            <p>
+                                Got API data through Next.js and deployed on the public web using Vercel.<br />
+                            </p>
+                            <p>
+                                Only logged-in users can access site features, including search and favorites.
 
-                            <p>Architect & Engineer</p>
-                            <p>We love that guy</p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -32,9 +47,25 @@ export default function Projects() {
                             <h6>Cloud Computing</h6>
                         </div>
                         <div class="flip-card-back">
-                            <h1>John Doe</h1>
-                            <p>Architect & Engineer</p>
-                            <p>We love that guy</p>
+                            <div className="asap pjIcons">
+                                <IconContext.Provider value={{ className: "pjIcon" }}>
+                                    <div onClick={() => window.open("https://github.com/mirimkim00/Museum-of-Art-website", '_blank')}>
+                                        <FaGithub />
+                                        Go to GitHub
+                                    </div>
+                                    <div>
+                                        <GrDeploy />
+                                        See the Demo
+                                    </div>
+                                </IconContext.Provider>
+                            </div>
+                            <p>
+                                Got API data through Next.js and deployed on the public web using Vercel.<br />
+                            </p>
+                            <p>
+                                Only logged-in users can access site features, including search and favorites.
+
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -47,9 +78,25 @@ export default function Projects() {
                             <h6>Museum of Art Website</h6>
                         </div>
                         <div class="flip-card-back">
-                            <h1>John Doe</h1>
-                            <p>Architect & Engineer</p>
-                            <p>We love that guy</p>
+                            <div className="asap pjIcons">
+                                <IconContext.Provider value={{ className: "pjIcon" }}>
+                                    <div onClick={() => window.open("https://github.com/mirimkim00/Museum-of-Art-website", '_blank')}>
+                                        <FaGithub />
+                                        Go to GitHub
+                                    </div>
+                                    <div>
+                                        <GrDeploy />
+                                        See the Demo
+                                    </div>
+                                </IconContext.Provider>
+                            </div>
+                            <p>
+                                Got API data through Next.js and deployed on the public web using Vercel.<br />
+                            </p>
+                            <p>
+                                Only logged-in users can access site features, including search and favorites.
+
+                            </p>
                         </div>
                     </div>
                 </div>

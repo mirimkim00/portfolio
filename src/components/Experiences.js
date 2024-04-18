@@ -1,6 +1,6 @@
 export default function Expereinces() {
     return (
-        <section>
+        <section id="experiences">
             <h3 className="ttl allerta">Experiences</h3>
             <div className="experiences">
                 <div className="job ex asap">
@@ -71,7 +71,12 @@ export default function Expereinces() {
                         </ul>
                     </div>
                 </div>
-            </div >
+            </div>
+            <div className="allerta" style={{ margin: '30px 0 50px 0' }}>
+                <h3>
+                    WHAT'S NEXT?
+                </h3>
+            </div>
         </section>
     )
 }
