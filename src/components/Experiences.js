@@ -1,7 +1,7 @@
 export default function Expereinces() {
     return (
         <section id="experiences">
-            <h3 className="ttl allerta">Experiences</h3>
+            <h2 className="ttl allerta">Experiences</h2>
             <div className="experiences">
                 <div className="job ex asap">
                     <div>

@@ -8,7 +8,7 @@ export default function Header() {
         <header>
             <Navbar key='md' expand='md' className="navbar-expand-lg mb-3">
                 <Container fluid>
-                    <Navbar.Brand className='me-auto' href="#" style={{ fontFamily: 'Asap', fontSize: '35px', fontWeight: 600 }} >MIRIM</Navbar.Brand>
+                    <Navbar.Brand className='me-auto asap' href="#" style={{ fontSize: '35px', fontWeight: 600 }} >MIRIM</Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
                     <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-md`}
@@ -16,7 +16,7 @@ export default function Header() {
                         placement="end"
                     >
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
+                            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`} className='asap' style={{ fontSize: '25px', fontWeight: 600 }}>
                                 MIRIM
                             </Offcanvas.Title>
                         </Offcanvas.Header>

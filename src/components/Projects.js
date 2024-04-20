@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 export default function Projects() {
     return (
         <section id="projects" className='darkSection'>
-            <h3 className="ttl allerta">Projects</h3>
+            <h2 className="ttl allerta">Projects</h2>
 
             <div className='pjs'>
                 <div class="flip-card">
