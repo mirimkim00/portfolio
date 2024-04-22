@@ -1,7 +1,9 @@
 import './App.css';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import About from './components/About';
 import Expereinces from './components/Experiences';
+import Education from './components/Education';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -9,8 +11,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
+      <About />
       <Expereinces />
+      <Education />
+      <Skills />
       <Projects />
       <Contact />
     </div>

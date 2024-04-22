@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+:root {
+  --museumOfArt: url("./img/museumOfArt.png");
+  --fragments: url("./img/fragments.png");
+  --frontend: url("./img/frontend.jpg");
+  --backend: url("./img/backend.jpg");
+}
+
 .nav-brand {
   font-weight: 500;
   font-size: 24px;
@@ -22,7 +29,11 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
+}
+
+.navbar-nav {
+  align-items: center;
 }
 
 .navbar-toggler {
@@ -41,7 +52,6 @@
   font-weight: 500;
   position: relative;
   font-family: "Allerta";
-  font-weight: 500;
 }
 
 .allerta {
@@ -52,9 +62,12 @@
   font-family: "Asap";
 }
 
-.nav-link:hover,
+.nav-link:hover {
+  color: #000 !important;
+}
+
 .nav-link.active {
-  color: #000;
+  color: #666777 !important;
 }
 
 .nav-link::before {
@@ -70,14 +83,42 @@
   transition: 0.3s ease-in-out;
 }
 
-.nav-link:hover::before,
-.nav-link.active::before {
+.nav-link:hover::before {
   width: 100%;
   visibility: visible;
 }
 
+#resumeBtn {
+  width: 100px;
+  height: 2.5em;
+  font-family: "Allerta";
+  font-weight: 500;
+  border: 1px solid transparent !important;
+  background-color: #ffc124;
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resumeBtn:hover {
+  background-color: #fefef0;
+  border: 3px solid #ffc738 !important;
+  color: black;
+}
+
 .ttl {
   padding: 80px 0 30px 0;
+}
+
+#about {
+  height: 500px;
+  padding: 0 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .experiences {
@@ -128,6 +169,47 @@
   color: white;
 }
 
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skillDiv {
+  width: 300px;
+  height: 400px;
+  background: no-repeat center;
+  background-size: cover;
+  background-image: var(--backgroundImage);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  padding: 30px 30px 0 30px;
+}
+
+.intro > p {
+  visibility: hidden;
+}
+
+.intro:hover {
+  padding: 0 30px;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.intro:hover > p {
+  color: white;
+  transition-duration: 0.5s;
+  visibility: visible;
+}
+
 .pjs {
   display: flex;
   flex-direction: row;
@@ -167,10 +249,7 @@
   border-radius: 20px;
   backface-visibility: hidden;
 }
-:root {
-  --museumOfArt: url("./img/museumOfArt.png");
-  --fragments: url("./img/fragments.png");
-}
+
 .flip-card-front {
   background-size: contain;
   background-repeat: no-repeat;

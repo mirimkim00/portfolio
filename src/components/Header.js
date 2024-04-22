@@ -27,6 +27,9 @@ export default function Header() {
                                 <Nav.Link className="mx-lg-2" href="#projects">PROJECTS</Nav.Link>
                                 <Nav.Link className="mx-lg-2" href="#skills">SKILLS</Nav.Link>
                                 <Nav.Link className="mx-lg-2" href="#contact">CONTACT</Nav.Link>
+                                <button id='resumeBtn'>
+                                    RESUME
+                                </button>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
