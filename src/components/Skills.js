@@ -18,10 +18,11 @@ export default function Skills() {
                         </h4>
                         <p>
                             laksdjfawej foe jf oeirjfwqejfkfdjkal jiwehf kalsfd
+                            laksdjfaaawej foe jf oeirjfwqejfkfdjkal jiwehf kalsfd
+                            laksdjfaaawej foe jf oeirjfwqejfkfdjkal jiwehf kalsfd
                         </p>
                     </div>
                 </div>
-
 
                 <div className="skillDiv" style={{ '--backgroundImage': `var(--backend)` }}>
                     {/* <a href="https://www.freepik.com/free-vector/ui-ux-designers-isometric-composition-with-small-people-creating-custom-design-web-site-3d-vector-illustration_26760925.htm#fromView=search&page=1&position=6&uuid=fa5a691e-d0de-4e8a-aa21-d14dfabeb7c7">Image by macrovector on Freepik</a> */}
@@ -33,8 +34,8 @@ export default function Skills() {
                             laksdjfawej foe jf oeirjfwqejfkfdjkal jiwehf kalsfd
                         </p>
                     </div>
-
                 </div>
+
 
             </div>
         </section >
