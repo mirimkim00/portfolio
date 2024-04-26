@@ -12,6 +12,8 @@
   --fragments: url("./img/fragments.png");
   --frontend: url("./img/frontend.jpg");
   --backend: url("./img/backend.jpg");
+  --cloudComputing: url("./img/cloudComputing.jpg");
+  --pmTools: url("./img/pmtools.jpg");
 }
 
 .nav-brand {
@@ -66,7 +68,11 @@
   color: #000 !important;
 }
 
-.nav-link.active {
+/* .nav-link.active {
+  color: #666777 !important;
+} */
+
+.nav-link:active::before {
   color: #666777 !important;
 }
 
@@ -93,6 +99,7 @@
   height: 2.5em;
   font-family: "Allerta";
   font-weight: 500;
+  margin: 0 10px;
   border: 1px solid transparent !important;
   background-color: #ffc124;
   border-radius: 25px;
@@ -241,7 +248,7 @@
 
 .skillDiv:hover .intro > h4 {
   width: 100%;
-  line-height: 2;
+  padding-bottom: 10px;
   border-bottom: 1.5px solid #fff;
 }
 
@@ -355,17 +362,20 @@
 .ctForm > input,
 .ctForm > textarea {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 25px;
+  padding: 3px 2px;
   background-color: transparent;
   border: 1px solid transparent;
   border-bottom: 1px solid #000;
   resize: none;
+  outline: none;
 }
 
-.ctForm > input:focus {
-  border-color: #ffc738 !important;
+.ctForm input:focus,
+.ctForm textarea:focus {
+  border: 2px solid #37393b;
+  border-radius: 5px;
 }
-/* why it doesn't work */
 
 textarea::-webkit-scrollbar {
   width: 6px;

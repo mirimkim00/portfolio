@@ -1,6 +1,6 @@
 export default function Expereinces() {
     return (
-        <section id="experiences">
+        <section id="experiences" className="darkSection">
             <h2 className="ttl allerta">Experiences</h2>
             <div className="experiences">
                 <div className="job ex asap">
@@ -72,7 +72,7 @@ export default function Expereinces() {
                     </div>
                 </div>
             </div>
-            <div className="allerta" style={{ margin: '30px 0 50px 0' }}>
+            <div className="allerta" style={{ padding: '30px 0 50px 0' }}>
                 <h3>
                     WHAT'S NEXT?
                 </h3>

@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <section id="about" className="darkSection">
+        <section id="about">
             <h2 className="ttl allerta">
                 Hi, I'm Mirim!
             </h2>

@@ -24,8 +24,8 @@ export default function Header() {
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Nav.Link className="mx-lg-2" href="#about">ABOUT</Nav.Link>
                                 <Nav.Link className="mx-lg-2" href="#experiences">EXPERIENCES</Nav.Link>
-                                <Nav.Link className="mx-lg-2" href="#projects">PROJECTS</Nav.Link>
                                 <Nav.Link className="mx-lg-2" href="#skills">SKILLS</Nav.Link>
+                                <Nav.Link className="mx-lg-2" href="#projects">PROJECTS</Nav.Link>
                                 <Nav.Link className="mx-lg-2" href="#contact">CONTACT</Nav.Link>
                                 <button id='resumeBtn'>
                                     RESUME
