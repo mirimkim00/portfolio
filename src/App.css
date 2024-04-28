@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 :root {
   --museumOfArt: url("./img/museumOfArt.png");
   --fragments: url("./img/fragments.png");
@@ -16,10 +11,9 @@
   --pmTools: url("./img/pmtools.jpg");
 }
 
-.nav-brand {
-  font-weight: 500;
-  font-size: 24px;
-  padding-left: 1rem !important;
+#mirim {
+  font-size: 35px;
+  font-weight: 600;
 }
 
 .App,
@@ -31,7 +25,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 
 .navbar-nav {
@@ -126,12 +120,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.introduction {
+  width: 550px;
+  margin-top: 30px;
+  /* text-align: left; */
+  /* background-color: #ffc738;
+  color: black;
+  padding: 30px;
+  position: absolute;
+
+  visibility: hidden; */
 }
 
 .experiences {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0 50px;
 }
 
 .ex {
@@ -158,7 +166,8 @@
 
 .job {
   text-align: right;
-  margin-right: 10px;
+  align-items: end;
+  margin-right: 20px;
 }
 
 .jd {
@@ -168,6 +177,10 @@
 
 .vl {
   border-right: 2px dashed rgb(111, 111, 111);
+  height: 100px;
+}
+
+.long {
   height: 200px;
 }
 
@@ -432,33 +445,156 @@ textarea::-webkit-scrollbar-thumb {
   font-size: 22px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 1000px) {
+  .long {
+    height: 240px;
+  }
+
+  .skills {
+    display: ruby-text;
+  }
+  .skillDiv {
+    margin: 0 30px 30px;
+  }
+
+  .flip-card {
+    width: 30%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contactForm p {
+    padding-left: 25px;
+  }
+
+  .ctBox {
+    top: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+
+  .contactInfo {
+    padding: 30px;
+    height: 525px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 767px) {
+  #mirim {
+    font-size: 30px;
   }
 
-  to {
-    transform: rotate(360deg);
+  .nav-brand {
+    font-size: 30px;
+  }
+
+  .nav-link::before {
+    border-radius: 25px;
+    transform: translate(-50%, -5px);
+  }
+
+  #about {
+    padding: 0 50px;
+  }
+
+  #experiences {
+    padding: 0 3cqb;
+  }
+
+  .experiences {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .experiences p {
+    text-align: right;
+  }
+
+  .experiences ul {
+    padding-left: 1rem;
+  }
+
+  .jdContent {
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px dashed #ffc738;
+  }
+
+  .skills {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skillDiv {
+    margin: 30px 0;
+  }
+
+  .pjs {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flip-card {
+    margin: 30px 0;
+    width: 300px;
+  }
+
+  #skills,
+  #projects {
+    padding-bottom: 30px;
+  }
+
+  .contact {
+    padding: 0 30px 100px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactForm {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .contactForm p {
+    line-height: 2rem;
+    text-decoration: underline 2px solid #ffc124;
+    text-underline-offset: 5px;
+  }
+
+  .ctForm {
+    width: 100%;
+  }
+
+  .ctBox {
+    display: none;
+  }
+
+  .contactInfo {
+    width: 100%;
+    height: 400px;
+    padding: 0 20px;
+  }
+
+  .ctInfo {
+    margin: 0;
+    font-size: 18px;
   }
 }

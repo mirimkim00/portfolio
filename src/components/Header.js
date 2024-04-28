@@ -8,7 +8,7 @@ export default function Header() {
         <header>
             <Navbar key='md' expand='md' className="navbar-expand-lg mb-3">
                 <Container fluid>
-                    <Navbar.Brand className='me-auto asap' href="#" style={{ fontSize: '35px', fontWeight: 600 }} >MIRIM</Navbar.Brand>
+                    <Navbar.Brand id='mirim' className='me-auto asap' href="#">MIRIM</Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
                     <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-md`}
@@ -35,7 +35,6 @@ export default function Header() {
                     </Navbar.Offcanvas>
                 </Container>
             </Navbar>
-
         </header>
     );
 }
