@@ -11,6 +11,14 @@
   --pmTools: url("./img/pmtools.jpg");
 }
 
+.allerta {
+  font-family: "Allerta";
+}
+
+.asap {
+  font-family: "Asap";
+}
+
 #mirim {
   font-size: 35px;
   font-weight: 600;
@@ -43,38 +51,26 @@
   outline: none;
 }
 
-.nav-link {
-  color: #666777;
+.navLinks a {
+  color: #666777 !important;
   font-weight: 500;
   position: relative;
   font-family: "Allerta";
+  margin: 0 10px;
+  line-height: 2rem;
 }
 
-.allerta {
-  font-family: "Allerta";
-}
-
-.asap {
-  font-family: "Asap";
-}
-
-.nav-link:hover {
+.navLinks a:hover {
   color: #000 !important;
+  cursor: pointer;
 }
 
-/* .nav-link.active {
-  color: #666777 !important;
-} */
-
-.nav-link:active::before {
-  color: #666777 !important;
-}
-
-.nav-link::before {
+.navLinks a::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
+  border-radius: 25px;
   transform: translateX(-50%);
   width: 0;
   height: 3px;
@@ -83,7 +79,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.nav-link:hover::before {
+.navLinks a:hover::before {
   width: 100%;
   visibility: visible;
 }
@@ -101,6 +97,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
 }
 
 #resumeBtn:hover {
@@ -494,9 +491,8 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 30px;
   }
 
-  .nav-link::before {
-    border-radius: 25px;
-    transform: translate(-50%, -5px);
+  #resumeBtn {
+    margin: 5px 10px;
   }
 
   #about {

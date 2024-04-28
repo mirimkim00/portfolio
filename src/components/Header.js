@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Link } from 'react-scroll';
 
 export default function Header() {
     return (
@@ -21,12 +22,12 @@ export default function Header() {
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link className="mx-lg-2" href="#about">ABOUT</Nav.Link>
-                                <Nav.Link className="mx-lg-2" href="#experiences">EXPERIENCES</Nav.Link>
-                                <Nav.Link className="mx-lg-2" href="#skills">SKILLS</Nav.Link>
-                                <Nav.Link className="mx-lg-2" href="#projects">PROJECTS</Nav.Link>
-                                <Nav.Link className="mx-lg-2" href="#contact">CONTACT</Nav.Link>
+                            <Nav className="justify-content-end flex-grow-1 pe-3 navLinks">
+                                <Link to='about' duration={500} offset={-80}>ABOUT</Link>
+                                <Link to='experiences' duration={500} offset={-80}>EXPERIENCES</Link>
+                                <Link to='skills' duration={500} offset={-80}>SKILLS</Link>
+                                <Link to='projects' duration={500} offset={-80}>PROJECTS</Link>
+                                <Link to='contact' duration={500} offset={-80}>CONTACT</Link>
                                 <button id='resumeBtn'>
                                     RESUME
                                 </button>
