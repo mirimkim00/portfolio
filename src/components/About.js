@@ -12,7 +12,7 @@ export default function About() {
                 </h6>
             </div>
             <div className="introduction asap">
-                I'm a junior developer with a passion for web development. I specialize in front-end technologies like HTML, CSS, and JavaScript, and I'm eager to contribute to innovative projects and collaborate with talented teams. Let's connect and explore opportunities to work together!
+                As a junior full-stack developer, I've worked on diverse projects, closely collaborating with teammates and clients. Leveraging this experience, I'm eager to apply my skills to innovative projects and collaborate effectively. Let's connect to explore opportunities to work together!
             </div>
         </section>
     )
