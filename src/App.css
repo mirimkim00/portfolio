@@ -112,16 +112,116 @@
 
 #about {
   height: 500px;
-  padding: 0 150px;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about {
+  height: 100%;
+  text-align: right;
+  position: absolute;
+  left: 10%;
+  padding: 0 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  position: relative;
+  background: linear-gradient(to right, #fefef0 95%, rgba(0, 0, 0, 0));
+  z-index: 1;
 }
 
-.introduction {
-  margin-top: 30px;
+.about > p {
+  width: 430px;
+}
+
+.heroIcons {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translate(40%, -5%);
+}
+
+.heroIcon {
+  line-height: 10px;
+  display: flex;
+  padding: 5px 0;
+  white-space: nowrap;
+  font-size: 55px;
+  transform: rotate(-30deg);
+}
+
+.heroIcon svg {
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0 5px;
+}
+
+.heroIcon svg:hover {
+  color: #ffc738;
+  filter: drop-shadow(0 0 20px #ffc738);
+}
+
+.heroIcon svg:not(:hover) {
+  transition-delay: 150ms;
+}
+
+.heroIcon div {
+  animation: animate1 80s linear infinite;
+  animation-delay: -80s;
+}
+
+.heroIcon div:nth-child(2) {
+  animation: animate2 80s linear infinite;
+  animation-delay: -40s;
+}
+
+.heroIcon:nth-child(even) div {
+  animation: animate3 80s linear infinite;
+  animation-delay: -80s;
+}
+
+.heroIcon:nth-child(even) div:nth-child(2) {
+  animation: animate4 80s linear infinite;
+  animation-delay: -40s;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .experiences {
