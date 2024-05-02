@@ -21,24 +21,6 @@ export default function Expereinces() {
                             Feb 2023 – Jun 2023<br />
                             SportManager, Zwolle, Netherlands
                         </p>
-
-
-                        {/* <div>
-                            <h5>Software Developer</h5>
-                            <p>
-                                Co-op & Part-Time<br />
-                                May 2022 – Dec 2022<br />
-                                Alpha Labs, North York, Canada
-                            </p>
-                        </div>
-                        <div style={{ marginTop: '110px' }}>
-                            <h5>Mobile Application Developer</h5>
-                            <p>
-                                Volunteer<br />
-                                Feb 2023 – Jun 2023<br />
-                                SportManager, Zwolle, Netherlands
-                            </p>
-                        </div> */}
                     </div>
 
                     <div className="ex">
