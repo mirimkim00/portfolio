@@ -5,7 +5,7 @@ import react from '../img/react.png';
 import nodejs from '../img/nodejs.png';
 import aspnet from '../img/aspnet.png';
 import oracle from '../img/oracle.png';
-// import mongoDB from '../img/mongoDB.png';
+import mongoDB from '../img/mongoDB.png';
 import firebase from '../img/firebase.png';
 import aws from '../img/aws.png';
 import docker from '../img/docker.png';
@@ -13,7 +13,7 @@ import git from '../img/git.png';
 import github from '../img/github.png';
 import trello from '../img/trello.png';
 import figma from '../img/figma.png';
-// import postgreSQL from '../img/postgreSQL.png';
+import postgreSQL from '../img/postgreSQL.png';
 
 export default function Skills() {
     return (
@@ -74,12 +74,12 @@ export default function Skills() {
                                     ASP.NET
                                 </p>
                             </div>
-                            {/* <div>
+                            <div>
                                 <img src={mongoDB} alt='MongoDB' />
                                 <p>
                                     MongoDB
                                 </p>
-                            </div> */}
+                            </div>
                             <div>
                                 <img src={oracle} alt='Oracle' />
                                 <p>
@@ -92,12 +92,12 @@ export default function Skills() {
                                     Firebase
                                 </p>
                             </div>
-                            {/* <div>
+                            <div>
                                 <img src={postgreSQL} alt='PostgreSQL' />
                                 <p>
                                     PostgreSQL
                                 </p>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
