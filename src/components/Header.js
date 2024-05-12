@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-scroll';
 import { useState, useEffect, useRef } from 'react';
+import resume from '../MirimKim_Resume.pdf';
 
 export default function Header() {
     const [show, setShow] = useState(false);
@@ -21,8 +22,7 @@ export default function Header() {
 
     useEffect(() => {
         if (componentRef.current) {
-            setHeight(componentRef.current.clientHeight);
-            console.log(height);
+            setHeight(componentRef.current.clientHeight - 1);
         }
     }, [height]);
 
@@ -58,9 +58,11 @@ export default function Header() {
                                 <Link to='skills' duration={500} offset={-height} onClick={mobile ? toggleOffcanvas : null}>SKILLS</Link>
                                 <Link to='projects' duration={500} offset={-height} onClick={mobile ? toggleOffcanvas : null}>PROJECTS</Link>
                                 <Link to='contact' duration={500} offset={-height} onClick={mobile ? toggleOffcanvas : null}>CONTACT</Link>
-                                <button id='resumeBtn'>
-                                    RESUME
-                                </button>
+                                <div id='resumeBtn'>
+                                    <a href={resume} target='_blank' rel="noreferrer">
+                                        RESUME
+                                    </a>
+                                </div>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

@@ -66,7 +66,7 @@
   cursor: pointer;
 }
 
-.navLinks a::before {
+.navLinks a:not(#resumeBtn a)::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -80,7 +80,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.navLinks a:hover::before {
+.navLinks a:not(#resumeBtn a):hover::before {
   width: 100%;
   visibility: visible;
 }
@@ -93,18 +93,27 @@
   margin: 0 10px;
   border: 1px solid transparent !important;
   background-color: #ffc124;
+  cursor: pointer;
   border-radius: 25px;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  transition: background-color 0.3s, border 0.3s;
 }
 
 #resumeBtn:hover {
   background-color: #fefef0;
   border: 3px solid #ffc738 !important;
-  color: black;
+}
+
+#resumeBtn a {
+  color: white !important;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#resumeBtn:hover a {
+  color: black !important;
 }
 
 .ttl {
@@ -356,6 +365,10 @@
   padding: 60px 30px;
 }
 
+.skillDiv:hover .intro:has(.backend) {
+  padding: 40px 30px;
+}
+
 .skillDiv:hover .intro > h4 {
   width: 100%;
   padding-bottom: 10px;
@@ -402,6 +415,10 @@
 .backend div {
   width: 50px;
   margin: 10px;
+}
+
+.cloud {
+  padding: 50px 0;
 }
 
 .cloud div {

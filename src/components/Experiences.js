@@ -19,7 +19,7 @@ export default function Expereinces() {
                         <p>
                             Volunteer<br />
                             Feb 2023 – Jun 2023<br />
-                            SportManager, Zwolle, Netherlands
+                            Sport Manager, Zwolle, Netherlands
                         </p>
                     </div>
 
