@@ -90,7 +90,7 @@ export default function Projects() {
                                         <FaGithub />
                                         Go to GitHub
                                     </div>
-                                    <div onClick={() => window.open("", '_blank')}>
+                                    <div onClick={() => window.open("https://mirimkim-portfolio.vercel.app/", '_blank')}>
                                         <GrDeploy />
                                         See the Demo
                                     </div>
