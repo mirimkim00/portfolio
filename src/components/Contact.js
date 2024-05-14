@@ -1,24 +1,47 @@
 import { MdOutlineEmail } from "react-icons/md";
 import { FiPhone, FiLinkedin, FiGithub } from "react-icons/fi";
 import { IconContext } from "react-icons";
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
     const form = useRef();
+    const name = useRef();
+    const email = useRef();
+    const message = useRef();
+    const [msg, setMsg] = useState('');
+    const [msgColor, setMsgColor] = useState('');
 
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_h7viei9', 'template_qqurnxe', form.current, 'Jjyc-fKfGcPToiUoE')
-            .then((response) => {
-                // console.log('Sent email successfully:', response.status, response.text);
-                alert('Email sent successfully.');
-                form.current.reset();
-            }, (error) => {
-                // console.error('Failed to send:', error);
-                alert('Failed to send email.');
-            });
+        if (name.current.value.trim() === "" || email.current.value.trim() === "" || message.current.value.trim() === "") {
+            setMsg('Please fill out the form.');
+            setMsgColor('red');
+        } else {
+
+            emailjs.sendForm('service_h7viei9', 'template_qqurnxe', form.current, 'Jjyc-fKfGcPToiUoE')
+                .then((response) => {
+                    // console.log('Sent email successfully:', response.status, response.text);
+                    setMsg('Email sent successfully.');
+                    setMsgColor('green');
+                    form.current.reset();
+                }, (error) => {
+                    // console.error('Failed to send:', error);
+                    setMsg('Failed to send email. Please send it directly.');
+                    setMsgColor('red');
+                });
+        }
     };
+
+    useEffect(() => {
+        if (msg !== null) {
+            const timerId = setTimeout(() => {
+                setMsg(null);
+            }, 2000);
+
+            return () => clearTimeout(timerId);
+        }
+    }, [msg]);
 
     return (
         <section id="contact">
@@ -29,10 +52,13 @@ export default function Contact() {
                         Feel free to contact me anytime.<br />
                         I will get back to you as soon as possible!
                     </p>
+                    <p className="alertMsg" style={{ color: `${msgColor}`, textDecorationColor: `${msgColor}` }}>
+                        {msg}
+                    </p>
                     <form ref={form} className="ctForm" onSubmit={sendEmail}>
-                        <input type="text" name="from_name" placeholder="Name" /><br />
-                        <input type="email" name="email" placeholder="Email" /><br />
-                        <textarea id="ctMessage" rows="6" name="message" placeholder="Message"></textarea><br />
+                        <input type="text" name="from_name" placeholder="Name" ref={name} /><br />
+                        <input type="email" name="email" placeholder="Email" ref={email} /><br />
+                        <textarea id="ctMessage" rows="6" name="message" placeholder="Message" ref={message}></textarea><br />
 
                         <button type="submit" className="ctBtn">Send</button>
                     </form>
@@ -68,7 +94,6 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-
         </section>
     )
 }
