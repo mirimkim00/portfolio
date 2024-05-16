@@ -568,12 +568,13 @@
 }
 
 .alertMsg {
-  width: 50%;
-  border-radius: 10px;
+  width: 70%;
   margin: 0;
+  font-size: 18px;
   font-weight: 500;
-  text-underline-offset: 8px;
-  text-decoration: underline overline;
+  line-height: 2rem;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
 }
 
 .ctForm {

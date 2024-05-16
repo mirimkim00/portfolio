@@ -11,6 +11,7 @@ export default function Contact() {
     const message = useRef();
     const [msg, setMsg] = useState('');
     const [msgColor, setMsgColor] = useState('');
+    const [showMsg, setShowMsg] = useState('');
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -18,7 +19,6 @@ export default function Contact() {
             setMsg('Please fill out the form.');
             setMsgColor('red');
         } else {
-
             emailjs.sendForm('service_h7viei9', 'template_qqurnxe', form.current, 'Jjyc-fKfGcPToiUoE')
                 .then((response) => {
                     // console.log('Sent email successfully:', response.status, response.text);
@@ -27,19 +27,23 @@ export default function Contact() {
                     form.current.reset();
                 }, (error) => {
                     // console.error('Failed to send:', error);
-                    setMsg('Failed to send email. Please send it directly.');
                     setMsgColor('red');
+                    setMsg('Failed to send email.\nPlease send your message via email.');
                 });
         }
     };
 
     useEffect(() => {
         if (msg !== null) {
+            setShowMsg('block');
+
             const timerId = setTimeout(() => {
                 setMsg(null);
             }, 2000);
 
             return () => clearTimeout(timerId);
+        } else {
+            setShowMsg('none');
         }
     }, [msg]);
 
@@ -52,9 +56,9 @@ export default function Contact() {
                         Feel free to contact me anytime.<br />
                         I will get back to you as soon as possible!
                     </p>
-                    <p className="alertMsg" style={{ color: `${msgColor}`, textDecorationColor: `${msgColor}` }}>
+                    <pre className="alertMsg asap" style={{ display: `${showMsg}`, color: `${msgColor}`, borderColor: `${msgColor}` }}>
                         {msg}
-                    </p>
+                    </pre>
                     <form ref={form} className="ctForm" onSubmit={sendEmail}>
                         <input type="text" name="from_name" placeholder="Name" ref={name} /><br />
                         <input type="email" name="email" placeholder="Email" ref={email} /><br />
