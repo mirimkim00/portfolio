@@ -13,6 +13,8 @@ export default function Contact() {
     const [msgColor, setMsgColor] = useState('');
     const [showMsg, setShowMsg] = useState('');
 
+    const [fade, setFade] = useState('');
+
     const sendEmail = (e) => {
         e.preventDefault();
         if (name.current.value.trim() === "" || email.current.value.trim() === "" || message.current.value.trim() === "") {
@@ -39,11 +41,16 @@ export default function Contact() {
 
             const timerId = setTimeout(() => {
                 setMsg(null);
+            }, 2200);
+
+            const timerId2 = setTimeout(() => {
+                setFade('fade-out');
             }, 2000);
 
-            return () => clearTimeout(timerId);
+            return () => clearTimeout(timerId, timerId2);
         } else {
             setShowMsg('none');
+            setFade('');
         }
     }, [msg]);
 
@@ -56,7 +63,7 @@ export default function Contact() {
                         Feel free to contact me anytime.<br />
                         I will get back to you as soon as possible!
                     </p>
-                    <pre className="alertMsg asap" style={{ display: `${showMsg}`, color: `${msgColor}`, borderColor: `${msgColor}` }}>
+                    <pre className={`alertMsg asap ${fade}`} style={{ display: `${showMsg}`, color: `${msgColor}`, borderColor: `${msgColor}` }}>
                         {msg}
                     </pre>
                     <form ref={form} className="ctForm" onSubmit={sendEmail}>
