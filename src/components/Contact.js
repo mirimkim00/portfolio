@@ -59,13 +59,20 @@ export default function Contact() {
             <h2 className="ttl allerta">Contact</h2>
             <div className="contact">
                 <div className="contactForm asap">
-                    <p>
-                        Feel free to contact me anytime.<br />
-                        I will get back to you as soon as possible!
-                    </p>
-                    <pre className={`alertMsg asap ${fade}`} style={{ display: `${showMsg}`, color: `${msgColor}`, borderColor: `${msgColor}` }}>
-                        {msg}
-                    </pre>
+                    <div className="ctMsg">
+                        {
+                            (msg == null) ?
+                                <p>
+                                    Feel free to contact me anytime.<br />
+                                    I will get back to you as soon as possible!
+                                </p>
+                                :
+                                <pre className={`alertMsg asap ${fade}`} style={{ display: `${showMsg}`, color: `${msgColor}`, borderColor: `${msgColor}` }}>
+                                    {msg}
+
+                                </pre>
+                        }
+                    </div>
                     <form ref={form} className="ctForm" onSubmit={sendEmail}>
                         <input type="text" name="from_name" placeholder="Name" ref={name} /><br />
                         <input type="email" name="email" placeholder="Email" ref={email} /><br />
