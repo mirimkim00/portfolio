@@ -23,6 +23,7 @@
 .mirim {
   font-size: 35px;
   font-weight: 600;
+  padding: 0 20px;
 }
 
 .App,
@@ -132,21 +133,28 @@
 }
 
 .about {
+  width: 45%;
   height: 100%;
   text-align: right;
   position: absolute;
   left: 10%;
-  padding: 0 100px;
+  padding-right: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: end;
   background: linear-gradient(to right, #fefef0 95%, rgba(0, 0, 0, 0));
   z-index: 1;
 }
 
-.about > p {
-  width: 430px;
+.about > h1 {
+  padding: 80px 0 30px 0;
+}
+
+.introduction {
+  width: 500px;
   margin: 5px 0;
+  font-size: 20px;
 }
 
 .heroIcons {
@@ -713,8 +721,20 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 1024px) {
+  #about {
+    height: 600px;
+  }
+
   .about {
     padding: 0 80px 0 0;
+  }
+
+  .about > h1 {
+    padding-top: 50px;
+  }
+
+  .introduction {
+    width: 360px;
   }
 
   .long {
@@ -763,6 +783,21 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 768px) {
+  .about {
+    padding: 0 40px 0 20px;
+    text-align: start;
+  }
+
+  .about > h1,
+  .about > h4 {
+    width: 100%;
+  }
+
+  .introduction {
+    width: 100%;
+    font-size: 18px;
+  }
+
   .ctMsg pre {
     font-size: 16px;
   }
@@ -801,9 +836,9 @@ textarea::-webkit-scrollbar-thumb {
     position: unset;
   }
 
-  .about > p {
+  .introduction {
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 30px;
   }
 

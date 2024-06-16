@@ -5,31 +5,66 @@ export default function About() {
     return (
         <section id="about">
             <div className="about">
-                <h2 className="ttl allerta">
+                <h1 className="allerta">
                     Hi, I'm Mirim!
-                </h2>
-                <h6 className="allerta">
-                    A Junior Fullstack Developer
-                </h6>
-                <MediaQuery minWidth={768}>
-                    <p>
-                        As a junior full-stack developer, I've worked on diverse projects, closely collaborating with teammates and clients.
-                    </p>
-                    <p>
-                        Leveraging this experience, I'm eager to apply my skills to innovative projects and collaborate effectively.
-                    </p>
-                    <p>
-                        Let's connect to explore opportunities to work together!
-                    </p>
+                </h1>
+                <h4 className="allerta">
+                    A Fullstack Developer
+                </h4>
+                <MediaQuery minWidth={769}>
+                    <div className='introduction'>
+                        <p>
+                            As a full-stack developer, I've worked on diverse projects, closely collaborating with teammates and clients.
+                        </p>
+                        <p>
+                            Leveraging this experience, I'm eager to apply my skills to innovative projects and collaborate effectively.
+                        </p>
+                        <p>
+                            Let's connect to explore opportunities to work together!
+                        </p>
+                    </div>
                 </MediaQuery>
+
+                <MediaQuery minWidth={768} maxWidth={768}>
+                    <div className='introduction'>
+                        <p>
+                            As a full-stack developer, <br />
+                            I've worked on diverse projects, <br />
+                            closely collaborating <br />
+                            with teammates and clients.
+                        </p>
+                        <p>
+                            Leveraging this experience, <br />
+                            I'm eager to apply my skills to <br />
+                            innovative projects and <br />
+                            collaborate effectively.
+                        </p>
+                        <p>
+                            Let's connect to explore <br />
+                            opportunities to work together!
+                        </p>
+                    </div>
+                </MediaQuery>
+
                 <MediaQuery maxWidth={767}>
-                    <p>
-                        As a junior full-stack developer, I've worked on diverse projects, closely collaborating with teammates and clients.
-                        <br /><br />
-                        Leveraging this experience, I'm eager to apply my skills to innovative projects and collaborate effectively.
-                        <br /><br />
-                        Let's connect to explore opportunities to work together!
-                    </p>
+                    <div className='introduction'>
+                        <p>
+                            As a full-stack developer, <br />
+                            I've worked on diverse projects, <br />
+                            closely collaborating <br />
+                            with teammates and clients.
+                        </p>
+                        <p>
+                            Leveraging this experience, <br />
+                            I'm eager to apply my skills to <br />
+                            innovative projects and <br />
+                            collaborate effectively.
+                        </p>
+                        <p>
+                            Let's connect to explore <br />
+                            opportunities to work together!
+                        </p>
+                    </div>
                 </MediaQuery>
             </div>
             <HeroIcons />
