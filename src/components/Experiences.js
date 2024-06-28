@@ -17,7 +17,6 @@ export default function Expereinces() {
                         <div style={{ marginTop: '110px' }}></div>
                         <h5>Mobile Application Developer</h5>
                         <p>
-                            Volunteer<br />
                             Feb 2023 – Jun 2023<br />
                             Sport Manager, Zwolle, Netherlands
                         </p>
@@ -103,7 +102,6 @@ export default function Expereinces() {
                     <div className='jdContent'>
                         <h5>Mobile Application Developer</h5>
                         <p>
-                            Volunteer<br />
                             Feb 2023 – Jun 2023<br />
                             SportManager, Zwolle, Netherlands
                         </p>

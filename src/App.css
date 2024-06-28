@@ -375,7 +375,7 @@
 }
 
 .skillDiv:hover .intro:has(.backend) {
-  padding: 40px 30px;
+  padding: 70px 30px;
 }
 
 .skillDiv:hover .intro > h4 {
@@ -424,6 +424,7 @@
 .backend div {
   width: 50px;
   margin: 10px;
+  padding-top: 20px;
 }
 
 .cloud {

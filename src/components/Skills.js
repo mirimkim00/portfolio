@@ -81,18 +81,6 @@ export default function Skills() {
                                 </p>
                             </div>
                             <div>
-                                <img src={oracle} alt='Oracle' />
-                                <p>
-                                    Oracle
-                                </p>
-                            </div>
-                            <div>
-                                <img src={firebase} alt='Firebase' />
-                                <p>
-                                    Firebase
-                                </p>
-                            </div>
-                            <div>
                                 <img src={postgreSQL} alt='PostgreSQL' />
                                 <p>
                                     PostgreSQL
