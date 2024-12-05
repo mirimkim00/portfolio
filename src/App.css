@@ -122,7 +122,7 @@
 }
 
 #about {
-  height: 100vh;
+  height: 500px;
   padding: 0 100px;
   display: flex;
   flex-direction: row;
