@@ -1,17 +1,19 @@
-import html5 from '../img/html5.png';
-import css3 from '../img/css3.png';
 import js from '../img/javascript.png';
 import react from '../img/react.png';
 import nodejs from '../img/nodejs.png';
-import aspnet from '../img/aspnet.png';
+import net from '../img/net.png';
+import nextjs from '../img/nextjs.png';
+import ts from '../img/ts.png';
 import oracle from '../img/oracle.png';
 import mongoDB from '../img/mongoDB.png';
+import django from '../img/django.png';
 import firebase from '../img/firebase.png';
 import aws from '../img/aws.png';
 import docker from '../img/docker.png';
 import git from '../img/git.png';
 import github from '../img/github.png';
 import trello from '../img/trello.png';
+import devops from '../img/devops.png';
 import figma from '../img/figma.png';
 import postgreSQL from '../img/postgreSQL.png';
 
@@ -28,27 +30,27 @@ export default function Skills() {
                         </h4>
                         <div className="skillIcon frontend">
                             <div>
-                                <img src={html5} alt='HTML5' />
+                                <img src={nextjs} alt='Next.js' />
                                 <p>
-                                    HTML5
-                                </p>
-                            </div>
-                            <div>
-                                <img src={css3} alt='CSS3' />
-                                <p>
-                                    CSS3
-                                </p>
-                            </div>
-                            <div>
-                                <img src={js} alt='JavaScript' />
-                                <p>
-                                    JavaScript
+                                    Next.js
                                 </p>
                             </div>
                             <div>
                                 <img src={react} alt='React' />
                                 <p>
                                     React
+                                </p>
+                            </div>
+                            <div>
+                                <img src={ts} alt='TypeScript' />
+                                <p>
+                                    TypeScript
+                                </p>
+                            </div>
+                            <div>
+                                <img src={js} alt='JavaScript' />
+                                <p>
+                                    JavaScript
                                 </p>
                             </div>
                         </div>
@@ -63,27 +65,27 @@ export default function Skills() {
                         </h4>
                         <div className="skillIcon backend">
                             <div>
-                                <img src={nodejs} alt='Node.js' />
+                                <img src={django} alt='Django' />
                                 <p>
-                                    Node.js
-                                </p>
-                            </div>
-                            <div>
-                                <img src={aspnet} alt='Node.js' />
-                                <p>
-                                    ASP.NET
-                                </p>
-                            </div>
-                            <div>
-                                <img src={mongoDB} alt='MongoDB' />
-                                <p>
-                                    MongoDB
+                                    Django
                                 </p>
                             </div>
                             <div>
                                 <img src={postgreSQL} alt='PostgreSQL' />
                                 <p>
                                     PostgreSQL
+                                </p>
+                            </div>
+                            <div>
+                                <img src={net} alt='.NET' />
+                                <p>
+                                    .NET
+                                </p>
+                            </div>
+                            <div>
+                                <img src={mongoDB} alt='MongoDB' />
+                                <p>
+                                    MongoDB
                                 </p>
                             </div>
                         </div>
@@ -133,9 +135,9 @@ export default function Skills() {
                                 </p>
                             </div>
                             <div>
-                                <img src={trello} alt='Trello' />
+                                <img src={devops} alt='DevOps' />
                                 <p>
-                                    Trello
+                                    Azure DevOps
                                 </p>
                             </div>
                             <div>
